@@ -113,7 +113,7 @@ This allow you to play %{name} activities in differents languages.
 
 %prep
 %setup -q
-%apply_patches
+%autopatch -p1
 
 
 %build
