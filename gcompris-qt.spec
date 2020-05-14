@@ -1,13 +1,17 @@
 Name:           gcompris-qt
-Version:        0.91
-Release:        %mkrel 1
+Version:        0.98
+Release:        1
 Summary:        "J'ai compris" / I Have Understood, the new QT based version
 License:        GPLv3+
 Group:          Education
 Url:            http://gcompris.net
 Source0:        http://gcompris.net/download/qt/src/%{name}-%{version}.tar.xz
-Source1:        gcompris-qt-voices-0.91.tar.xz
-Patch0:         gcompris-qt-0.91-fix-build-against-qt-5.11.0.patch
+# Built with package-data.sh
+Source1:        gcompris-qt-voices.tar.xz
+Source10:	package-data.sh
+# Packaged after running "make getSvnTranslations" inside
+# the source tree
+Source2:	gcompris-translations.tar.xz
 BuildRequires:  cmake(ECM)
 BuildRequires:  cmake(KF5DocTools)
 BuildRequires:  pkgconfig(Qt5Core) >= 5.2.0
@@ -112,15 +116,14 @@ This allow you to play %{name} activities in differents languages.
 
 
 %prep
-%setup -q
-%autopatch -p1
+%autosetup -p1 -a 2
 
 
 %build
 %cmake_qt5 \
       -Wno-dev \
-      -DQML_BOX2D_MODULE=disabled \
-      -DCMAKE_SKIP_RPATH=ON
+      -DCMAKE_SKIP_RPATH=ON \
+      -DQML_BOX2D_MODULE=disabled
 
 %make_build
 # Build translastions too.
