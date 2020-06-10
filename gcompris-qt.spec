@@ -29,6 +29,7 @@ BuildRequires:  pkgconfig(Qt5Quick) >= 5.2.0
 BuildRequires:  pkgconfig(Qt5OpenGL) >= 5.2.0
 BuildRequires:  pkgconfig(Qt5Sensors) >= 5.2.0
 BuildRequires:  pkgconfig(Qt5Help)
+BuildRequires:	pkgconfig(libssl)
 #BuildRequires:  pkgconfig(box2d)
 #BuildRequires:  qml-box2d
 BuildRequires:  libxml2-utils
