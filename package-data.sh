@@ -1,4 +1,7 @@
 #!/bin/sh
+# Make sure we have all the (not all common) deps of
+# generate_all_rcc.sh
+sudo dnf install id3v2 ffmpeg
 git clone --depth 1 https://github.com/gcompris/GCompris-data
 cd GCompris-data
 ./generate_all_rcc.sh

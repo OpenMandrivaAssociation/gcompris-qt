@@ -1,5 +1,5 @@
 Name:           gcompris-qt
-Version:        0.98
+Version:        1.0
 Release:        1
 Summary:        "J'ai compris" / I Have Understood, the new QT based version
 License:        GPLv3+
@@ -137,7 +137,8 @@ cd %{buildroot}%{_kde5_datadir}/%{name}
 tar -xJf %{S:1}
 
 %files
-%doc COPYING README.rst
+%license COPYING
+%doc README.md
 %doc %{_kde5_docdir}/HTML/en/%{name}/
 %{_kde5_bindir}/%{name}
 %{_kde5_applicationsdir}/org.kde.gcompris.desktop
@@ -147,7 +148,8 @@ tar -xJf %{S:1}
 %{_kde5_datadir}/%{name}/data2/words/
 
 %files activities
-%doc COPYING README.rst
+%license COPYING
+%doc README.md
 #Activities
 %dir %{_kde5_datadir}/%{name}
 %dir %{_kde5_datadir}/%{name}/rcc
@@ -157,14 +159,15 @@ tar -xJf %{S:1}
 %exclude %{_kde5_datadir}/%{name}/translations
 
 %files translations
-%doc COPYING README.rst
+%license COPYING
+%doc README.md
 %dir %{_kde5_datadir}/%{name}/translations
 %{_kde5_datadir}/%{name}/translations/*.qm
 
 %files voices
-%doc COPYING README.rst
+%license COPYING
+%doc README.md
 %dir %{_kde5_datadir}/%{name}/
 %dir %{_kde5_datadir}/%{name}/data2
 %{_kde5_datadir}/%{name}/data2/voices-ogg/
 %{_kde5_datadir}/%{name}/data2/backgroundMusic/
-
