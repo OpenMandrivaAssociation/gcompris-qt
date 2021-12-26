@@ -1,5 +1,5 @@
 Name:           gcompris-qt
-Version:        1.0
+Version:        2.0
 Release:        1
 Summary:        "J'ai compris" / I Have Understood, the new QT based version
 License:        GPLv3+
@@ -137,7 +137,6 @@ cd %{buildroot}%{_kde5_datadir}/%{name}
 tar -xJf %{S:1}
 
 %files
-%license COPYING
 %doc README.md
 %doc %{_kde5_docdir}/HTML/en/%{name}/
 %{_kde5_bindir}/%{name}
@@ -148,7 +147,6 @@ tar -xJf %{S:1}
 %{_kde5_datadir}/%{name}/data2/words/
 
 %files activities
-%license COPYING
 %doc README.md
 #Activities
 %dir %{_kde5_datadir}/%{name}
@@ -159,13 +157,11 @@ tar -xJf %{S:1}
 %exclude %{_kde5_datadir}/%{name}/translations
 
 %files translations
-%license COPYING
 %doc README.md
 %dir %{_kde5_datadir}/%{name}/translations
 %{_kde5_datadir}/%{name}/translations/*.qm
 
 %files voices
-%license COPYING
 %doc README.md
 %dir %{_kde5_datadir}/%{name}/
 %dir %{_kde5_datadir}/%{name}/data2
