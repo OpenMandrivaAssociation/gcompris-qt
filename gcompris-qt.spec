@@ -11,7 +11,7 @@ Source1:        gcompris-qt-voices.tar.xz
 Source10:	package-data.sh
 # Packaged after running "make getSvnTranslations" inside
 # the source tree
-Source2:	gcompris-translations.tar.xz
+#Source2:	gcompris-translations.tar.xz
 BuildRequires:  cmake(ECM)
 BuildRequires:  cmake(KF5DocTools)
 BuildRequires:  pkgconfig(Qt5Core) >= 5.2.0
