@@ -117,7 +117,7 @@ This allow you to play %{name} activities in differents languages.
 
 
 %prep
-%autosetup -p1 -a 2
+%autosetup -p1
 
 
 %build
