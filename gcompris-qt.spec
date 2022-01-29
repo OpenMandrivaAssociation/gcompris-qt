@@ -1,5 +1,5 @@
 Name:           gcompris-qt
-Version:        2.0
+Version:        2.1
 Release:        1
 Summary:        "J'ai compris" / I Have Understood, the new QT based version
 License:        GPLv3+
@@ -117,7 +117,7 @@ This allow you to play %{name} activities in differents languages.
 
 
 %prep
-%autosetup -p1 -a 2
+%autosetup -p1
 
 
 %build
