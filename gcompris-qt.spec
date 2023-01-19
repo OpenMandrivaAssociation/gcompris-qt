@@ -1,5 +1,5 @@
 Name:           gcompris-qt
-Version:        2.4
+Version:        3.0
 Release:        1
 Summary:        "J'ai compris" / I Have Understood, the new QT based version
 License:        GPLv3+
@@ -14,6 +14,9 @@ Source10:	package-data.sh
 #Source2:	gcompris-translations.tar.xz
 BuildRequires:  cmake(ECM)
 BuildRequires:  cmake(KF5DocTools)
+BuildRequires:  cmake(Qt5QuickParticles)
+BuildRequires:  pkgconfig(Qt5QmlWorkerScript)
+BuildRequires:  pkgconfig(Qt5Charts)
 BuildRequires:  pkgconfig(Qt5Core) >= 5.2.0
 BuildRequires:  pkgconfig(Qt5Xml) >= 5.2.0
 BuildRequires:  pkgconfig(Qt5XmlPatterns) >= 5.2.0
@@ -26,6 +29,7 @@ BuildRequires:  pkgconfig(Qt5Svg) >= 5.2.0
 BuildRequires:  pkgconfig(Qt5Concurrent) >= 5.2.0
 BuildRequires:  pkgconfig(Qt5PrintSupport) >= 5.2.0
 BuildRequires:  pkgconfig(Qt5Quick) >= 5.2.0
+BuildRequires:  pkgconfig(Qt5QuickControls2)
 BuildRequires:  pkgconfig(Qt5OpenGL) >= 5.2.0
 BuildRequires:  pkgconfig(Qt5Sensors) >= 5.2.0
 BuildRequires:  pkgconfig(Qt5Help)
@@ -138,7 +142,7 @@ tar -xJf %{S:1}
 
 %files
 %doc README.md
-%doc %{_kde5_docdir}/HTML/en/%{name}/
+#doc #{_kde5_docdir}/HTML/en/%{name}/
 %{_kde5_bindir}/%{name}
 %{_kde5_applicationsdir}/org.kde.gcompris.desktop
 %{_kde5_datadir}/metainfo/org.kde.gcompris.appdata.xml
