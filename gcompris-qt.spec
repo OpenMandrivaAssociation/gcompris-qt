@@ -26,6 +26,7 @@ BuildRequires:  pkgconfig(Qt5Svg) >= 5.2.0
 BuildRequires:  pkgconfig(Qt5Concurrent) >= 5.2.0
 BuildRequires:  pkgconfig(Qt5PrintSupport) >= 5.2.0
 BuildRequires:  pkgconfig(Qt5Quick) >= 5.2.0
+BuildRequires:  pkgconfig(Qt5QuickControls2)
 BuildRequires:  pkgconfig(Qt5OpenGL) >= 5.2.0
 BuildRequires:  pkgconfig(Qt5Sensors) >= 5.2.0
 BuildRequires:  pkgconfig(Qt5Help)
