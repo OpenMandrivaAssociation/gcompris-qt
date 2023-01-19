@@ -142,7 +142,7 @@ tar -xJf %{S:1}
 
 %files
 %doc README.md
-%doc %{_kde5_docdir}/HTML/en/%{name}/
+#doc #{_kde5_docdir}/HTML/en/%{name}/
 %{_kde5_bindir}/%{name}
 %{_kde5_applicationsdir}/org.kde.gcompris.desktop
 %{_kde5_datadir}/metainfo/org.kde.gcompris.appdata.xml
