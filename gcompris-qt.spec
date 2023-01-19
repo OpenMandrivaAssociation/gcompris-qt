@@ -14,6 +14,7 @@ Source10:	package-data.sh
 #Source2:	gcompris-translations.tar.xz
 BuildRequires:  cmake(ECM)
 BuildRequires:  cmake(KF5DocTools)
+BuildRequires:  pkgconfig(Qt5QmlWorkerScript)
 BuildRequires:  pkgconfig(Qt5Charts)
 BuildRequires:  pkgconfig(Qt5Core) >= 5.2.0
 BuildRequires:  pkgconfig(Qt5Xml) >= 5.2.0
