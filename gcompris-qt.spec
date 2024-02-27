@@ -1,5 +1,5 @@
 Name:           gcompris-qt
-Version:        3.3
+Version:        4.0
 Release:        1
 Summary:        "J'ai compris" / I Have Understood, the new QT based version
 License:        GPLv3+
