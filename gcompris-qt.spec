@@ -1,7 +1,7 @@
 Name:           gcompris-qt
 Version:        4.0
 Release:        1
-Summary:        "J'ai compris" / I Have Understood, the new QT based version
+Summary:        "J'ai compris" / I Have Understood - a set of educational applications
 License:        GPLv3+
 Group:          Education
 Url:            http://gcompris.net
@@ -12,6 +12,7 @@ Source10:	package-data.sh
 # Packaged after running "make getSvnTranslations" inside
 # the source tree
 #Source2:	gcompris-translations.tar.xz
+BuildRequires:	ninja
 BuildRequires:  cmake(ECM)
 BuildRequires:  cmake(KF5DocTools)
 BuildRequires:  cmake(Qt5QuickParticles)
@@ -36,6 +37,7 @@ BuildRequires:  pkgconfig(Qt5Help)
 BuildRequires:	pkgconfig(libssl)
 #BuildRequires:  pkgconfig(box2d)
 #BuildRequires:  qml-box2d
+BuildRequires:	gettext
 BuildRequires:  libxml2-utils
 BuildRequires:  docbook-dtds
 BuildRequires:  docbook-style-xsl
@@ -123,19 +125,19 @@ This allow you to play %{name} activities in differents languages.
 %prep
 %autosetup -p1
 
-
-%build
 %cmake_qt5 \
       -Wno-dev \
       -DCMAKE_SKIP_RPATH=ON \
-      -DQML_BOX2D_MODULE=disabled
+      -DQML_BOX2D_MODULE=disabled \
+      -G Ninja
 
-%make_build
+%build
+%ninja_build -C build
 # Build translastions too.
-%make_build BuildTranslations
+%ninja_build -C build BuildTranslations
 
 %install
-%make_install -C build
+%ninja_install -C build
 
 cd %{buildroot}%{_kde5_datadir}/%{name}
 tar -xJf %{S:1}
