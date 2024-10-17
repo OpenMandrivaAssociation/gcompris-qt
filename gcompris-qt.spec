@@ -4,7 +4,7 @@ Release:        1
 Summary:        "J'ai compris" / I Have Understood - a set of educational applications
 License:        GPLv3+
 Group:          Education
-Url:            http://gcompris.net
+Url:            https://gcompris.net
 Source0:        http://gcompris.net/download/qt/src/%{name}-%{version}.tar.xz
 # Built with package-data.sh
 Source1:        gcompris-qt-voices.tar.xz
