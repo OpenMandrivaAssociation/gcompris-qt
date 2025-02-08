@@ -14,25 +14,25 @@ Source10:	package-data.sh
 #Source2:	gcompris-translations.tar.xz
 BuildRequires:	ninja
 BuildRequires:  cmake(ECM)
-BuildRequires:  cmake(KF5DocTools)
-BuildRequires:  cmake(Qt5QuickParticles)
-BuildRequires:  pkgconfig(Qt5QmlWorkerScript)
-BuildRequires:  pkgconfig(Qt5Charts)
-BuildRequires:  pkgconfig(Qt5Core) >= 5.2.0
-BuildRequires:  pkgconfig(Qt5Xml) >= 5.2.0
-BuildRequires:  pkgconfig(Qt5XmlPatterns) >= 5.2.0
-BuildRequires:  pkgconfig(Qt5Multimedia) >= 5.2.0
-BuildRequires:  pkgconfig(Qt5Network) >= 5.2.0
-BuildRequires:  pkgconfig(Qt5Test) >= 5.2.0
-BuildRequires:  pkgconfig(Qt5Script) >= 5.2.0
-BuildRequires:  pkgconfig(Qt5Widgets) >= 5.2.0
-BuildRequires:  pkgconfig(Qt5Svg) >= 5.2.0
-BuildRequires:  pkgconfig(Qt5Concurrent) >= 5.2.0
-BuildRequires:  pkgconfig(Qt5PrintSupport) >= 5.2.0
-BuildRequires:  pkgconfig(Qt5Quick) >= 5.2.0
-BuildRequires:  pkgconfig(Qt5QuickControls2)
-BuildRequires:  pkgconfig(Qt5OpenGL) >= 5.2.0
-BuildRequires:  pkgconfig(Qt5Sensors) >= 5.2.0
+BuildRequires:  cmake(KF6DocTools)
+BuildRequires:  cmake(Qt6QuickParticles)
+BuildRequires:  pkgconfig(Qt6QmlWorkerScript)
+BuildRequires:  pkgconfig(Qt6Charts)
+BuildRequires:  pkgconfig(Qt6Core) >= 5.2.0
+BuildRequires:  pkgconfig(Qt6Xml) >= 5.2.0
+BuildRequires:  pkgconfig(Qt6XmlPatterns) >= 5.2.0
+BuildRequires:  pkgconfig(Qt6Multimedia) >= 5.2.0
+BuildRequires:  pkgconfig(Qt6Network) >= 5.2.0
+BuildRequires:  pkgconfig(Qt6Test) >= 5.2.0
+BuildRequires:  pkgconfig(Qt6Script) >= 5.2.0
+BuildRequires:  pkgconfig(Qt6Widgets) >= 5.2.0
+BuildRequires:  pkgconfig(Qt6Svg) >= 5.2.0
+BuildRequires:  pkgconfig(Qt6Concurrent) >= 5.2.0
+BuildRequires:  pkgconfig(Qt6PrintSupport) >= 5.2.0
+BuildRequires:  pkgconfig(Qt6Quick) >= 5.2.0
+BuildRequires:  pkgconfig(Qt6QuickControls2)
+BuildRequires:  pkgconfig(Qt6OpenGL) >= 5.2.0
+BuildRequires:  pkgconfig(Qt6Sensors) >= 5.2.0
 BuildRequires:  pkgconfig(Qt5Help)
 BuildRequires:	pkgconfig(libssl)
 #BuildRequires:  pkgconfig(box2d)
