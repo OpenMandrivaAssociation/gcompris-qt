@@ -15,25 +15,29 @@ Source10:	package-data.sh
 BuildRequires:	ninja
 BuildRequires:  cmake(ECM)
 BuildRequires:  cmake(KF6DocTools)
-BuildRequires:  cmake(Qt6QuickParticles)
 BuildRequires:  pkgconfig(Qt6QmlWorkerScript)
 BuildRequires:  pkgconfig(Qt6Charts)
-BuildRequires:  pkgconfig(Qt6Core) >= 5.2.0
-BuildRequires:  pkgconfig(Qt6Xml) >= 5.2.0
-BuildRequires:  pkgconfig(Qt6XmlPatterns) >= 5.2.0
-BuildRequires:  pkgconfig(Qt6Multimedia) >= 5.2.0
-BuildRequires:  pkgconfig(Qt6Network) >= 5.2.0
-BuildRequires:  pkgconfig(Qt6Test) >= 5.2.0
-BuildRequires:  pkgconfig(Qt6Script) >= 5.2.0
-BuildRequires:  pkgconfig(Qt6Widgets) >= 5.2.0
-BuildRequires:  pkgconfig(Qt6Svg) >= 5.2.0
-BuildRequires:  pkgconfig(Qt6Concurrent) >= 5.2.0
-BuildRequires:  pkgconfig(Qt6PrintSupport) >= 5.2.0
-BuildRequires:  pkgconfig(Qt6Quick) >= 5.2.0
+BuildRequires:  pkgconfig(Qt6Core) >= 6.5.0
+BuildRequires:  pkgconfig(Qt6Xml) >= 6.5.0
+BuildRequires:  pkgconfig(Qt6Multimedia) >= 6.5.0
+BuildRequires:  pkgconfig(Qt6Network) >= 6.5.0
+BuildRequires:  pkgconfig(Qt6Test) >= 6.5.0
+BuildRequires:  pkgconfig(Qt6Widgets) >= 6.5.0
+BuildRequires:  pkgconfig(Qt6Svg) >= 6.5.0
+BuildRequires:  pkgconfig(Qt6Concurrent) >= 6.5.0
+BuildRequires:  pkgconfig(Qt6PrintSupport) >= 6.5.0
+BuildRequires:  pkgconfig(Qt6Quick) >= 6.5.0
 BuildRequires:  pkgconfig(Qt6QuickControls2)
-BuildRequires:  pkgconfig(Qt6OpenGL) >= 5.2.0
-BuildRequires:  pkgconfig(Qt6Sensors) >= 5.2.0
-BuildRequires:  pkgconfig(Qt5Help)
+BuildRequires:	pkgconfig(Qt6QuickControls2Impl)
+BuildRequires:	pkgconfig(Qt6QuickControls2Basic)
+BuildRequires:	pkgconfig(Qt6QuickControls2BasicStyleImpl)
+BuildRequires:	pkgconfig(Qt6Qml)
+BuildRequires:	pkgconfig(Qt6Gui)
+BuildRequires:	pkgconfig(Qt6Linguist)
+BuildRequires:  pkgconfig(Qt6OpenGL) >= 6.5.0
+BuildRequires:  pkgconfig(Qt6Sensors) >= 6.5.0
+BuildRequires:  pkgconfig(Qt6Help)
+BuildRequires:	pkgconfig(Qt6WaylandClient)
 BuildRequires:	pkgconfig(libssl)
 #BuildRequires:  pkgconfig(box2d)
 #BuildRequires:  qml-box2d
