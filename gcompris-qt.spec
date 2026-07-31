@@ -1,5 +1,5 @@
 Name:           gcompris-qt
-Version:        25.1.1
+Version:        26.1
 Release:        1
 Summary:        "J'ai compris" / I Have Understood - a set of educational applications
 License:        GPLv3+
